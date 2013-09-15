@@ -9,15 +9,14 @@
 	<version>1.0</version>
 
 	<properties>
-		<liferay.theme.parent>_styled</liferay.theme.parent>
-		<liferay.theme.type>vm</liferay.theme.type>
+		<javax.portlet.version>2.0</javax.portlet.version>
+		<javax.servlet.version>2.4</javax.servlet.version>
+		<javax.servlet.jsp.version>2.0</javax.servlet.jsp.version>
+
 		<liferay.version>6.1.2</liferay.version>
 
-		<maven.compiler.version>3.1</maven.compiler.version>
 		<maven.liferay.version>6.1.30</maven.liferay.version>
 		<maven.resources.version>2.5</maven.resources.version>
-		<maven.sass.version>1.1.1</maven.sass.version>
-		<maven.surefire.version>2.12.4</maven.surefire.version>
 
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
@@ -73,7 +72,7 @@
 			<plugin>
 				<groupId>com.liferay.maven.plugins</groupId>
 				<artifactId>liferay-maven-plugin</artifactId>
-				<version>${liferay.version}</version>
+				<version>${maven.liferay.version}</version>
 				<configuration>
 					<autoDeployDir>${liferay.auto.deploy.dir}</autoDeployDir>
 					<liferayVersion>${liferay.version}</liferayVersion>
