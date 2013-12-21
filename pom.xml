@@ -6,21 +6,34 @@
 	<artifactId>layout-parent</artifactId>
 	<packaging>pom</packaging>
 	<name>Liferay Layout Parent</name>
-	<version>1.0</version>
+	<version>6.2.0-ga1</version>
 
 	<properties>
 		<javax.portlet.version>2.0</javax.portlet.version>
 		<javax.servlet.version>2.4</javax.servlet.version>
 		<javax.servlet.jsp.version>2.0</javax.servlet.jsp.version>
 
-		<liferay.version>6.1.2</liferay.version>
+		<liferay.version>6.2.0-ga1</liferay.version>
 
-		<maven.liferay.version>6.1.30</maven.liferay.version>
+		<maven.liferay.version>${liferay.version}</maven.liferay.version>
 		<maven.resources.version>2.5</maven.resources.version>
 		<maven.surefire.version>2.12.4</maven.surefire.version>
 
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
+
+	<repositories>
+		<repository>
+			<id>liferay</id>
+			<url>https://repository.liferay.com/nexus/content/groups/public</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
 
 	<dependencies>
 		<dependency>
